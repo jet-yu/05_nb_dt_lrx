@@ -1,0 +1,28 @@
+1.数据id化
+分出训练集，测试集。
+python DataConvert.py data/ nb_data
+
+2.得出模型文件
+p(y） p(x|y) x为单词
+# train
+python NB.py 1 nb_data.train model
+
+3.加载模型
+使用测试集测试看结果，比对测试集准确性
+
+# test
+python NB.py 0 nb_data.test model out
+
+结果：
+3067 files loaded!ed!
+79343 unique words found!
+start training:
+2435 instances loaded!
+3 classes! 75693 words!
+start testing:
+3 classes! 75693 words!
+632 632nes finished!
+Accuracy: 0.96835443038
+Precision and recall for Class 1 : 0.935779816514 0.976076555024
+Precision and recall for Class 2 : 0.98 0.933333333333
+Precision and recall for Class 3 : 0.990654205607 0.995305164319
